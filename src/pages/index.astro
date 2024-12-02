@@ -1,0 +1,87 @@
+---
+import Badge from '../components/Badge.astro';
+import Proyectos from '../components/Proyectos.astro';
+import Layout from '../layouts/Layout.astro';
+import Skills from '../components/Skills.astro'
+import Experiencia from '../components/Experiencia.astro'
+import Estudios from '../components/Estudios.astro'
+import Contacto from '../components/Contacto.astro'
+
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+
+    
+    <h1 class="text-black text-5xl font-bold flex flex-row gap-x-2 pb-2">
+      Hola, soy Laura <a href="https://www.linkedin.com/in/laura-padilla-1a247033b/" class="flex justify-center items-center">
+        <Badge>Conóceme más</Badge>
+      
+      </a>
+    </h1>
+    <h2 class="text-xl opacity-90">
+     <p>Desarrolladora de Aplicaciones Web.</p>  
+      <span class="text-pink-900">+3 años de experiencia.</span>
+      
+    </h2>
+    
+    
+
+    </section>
+    <div class="border-t-2 border-pink-900 ml-40 mr-40 mt-40"></div>
+
+    <div class="flex items-center ml-40 mt-20">
+     
+      <img src="https://cdn-icons-png.flaticon.com/128/4424/4424479.png" alt="" class="w-6s h-6 mr-4 rounded-full" />
+    </a>
+    <span class="text-lg font-semibold">Estudios</span>
+  </div>
+
+  <Estudios></Estudios>
+
+
+
+
+
+    <div class="flex items-center ml-40 mt-20">
+     
+      <img src="https://cdn-icons-png.flaticon.com/128/3471/3471635.png" alt="" class="w-6s h-6 mr-4 rounded-full" />
+    </a>
+    <span class="text-lg font-semibold">Experiencia</span>
+  </div>
+    <Experiencia>
+
+    </Experiencia>
+    
+    <div class="flex flex-col items-center justify-center mt-32">
+      
+      <div class="flex items-center">
+        <img src="https://cdn-icons-png.flaticon.com/128/2071/2071756.png" alt="" class="w-6 h-6 mr-4" />
+        <span class="text-lg font-semibold">Skills</span>
+      </div>
+    </div>
+    
+    <Skills></Skills>
+
+
+    
+    <div class="flex items-center ml-40 mt-40">
+     
+        <img src="https://prints.ultracoloringpages.com/01cff8330f901d9f0a0e6cf4c372bc6e.png" alt="" class="w-6s h-6 mr-4 rounded-full" />
+      </a>
+      <span class="text-lg font-semibold">Proyectos</span>
+    </div>
+    
+    
+    <Proyectos>
+     
+    </Proyectos>
+
+    <Contacto></Contacto>
+    
+    
+    
+  </main>
+</Layout>
